@@ -1,0 +1,20 @@
+<%- include("partials/header") %>
+<%- include("partials/nav") %>
+ <ul class="list-group ">
+    <% users.forEach(function(user){ %>
+
+        <li class="list-group-item .d-flex ">
+          Task =  <%= user.task %> <br>
+          Description =  <%= user.description %> <br>
+          Duedate =  <%= user.Duedate %> <br>
+          <div class="icon">
+          <a href="/update/<%= user._id %>"><i class="ri-edit-box-fill"></i></a>    
+          <a href="/delete/<%= user._id %>"><i class="ri-delete-bin-6-fill"></i></a>   
+
+          </div>
+          </li>       
+   <% }) %>
+
+</ul>
+
+<%- include("partials/footer") %>

@@ -1,0 +1,87 @@
+*{
+  margin : 0;
+  padding : 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+html , body {
+  height : 100%;
+  width  : 100%;
+  background-image: url(/images/billy-williams-8wz1Q4Q_XAg-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+ }
+ .container{
+  
+  display: flex;
+  justify-content: space-between;
+ }
+ h1{
+  margin: 40px;
+  font-size: 40px;
+ }
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+} 
+a{
+  margin: 0px 20px;
+  font-size: 18px;
+  text-decoration: none;
+}
+#check{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgb(0, 90, 154);
+  color: white;
+  padding: 10px 40px;
+  border-radius: 20px;
+}
+.form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  /* background-color: aquamarine; */
+ 
+
+}
+form{
+  height: 60%;
+  width: 40%;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: top;
+  align-items: center;
+  flex-direction: column;
+}
+input{
+  margin: 10px 10px;
+  padding: 10px 40px;
+  border-radius: 10px;
+  border: none; 
+}
+span{
+  margin: 20px 0px;
+}
+ul{
+  display: flex;
+  align-items: center;
+}
+li{
+  width: 80%;
+}
+.icon{
+  position: absolute;
+  right: 0;
+  top: 25px;
+  margin: 0 30px;
+}
+i{
+  font-size: 25px;
+  color: black;
+}

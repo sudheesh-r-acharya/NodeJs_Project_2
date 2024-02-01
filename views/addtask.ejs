@@ -1,0 +1,28 @@
+<%- include("partials/header") %>
+<%- include("partials/nav") %>
+<div class="form">
+
+<form action="/addtask" method="post">
+    <input
+     type="text"
+     name="task"
+     placeholder="Enter Your Task">
+    <input
+     type="text"
+     name="description"
+     placeholder="Enter Task Description">
+    <input 
+     type="date"
+     name="Duedate"
+     placeholder="Enter Duedate">
+<span>
+
+    <button class="bg-light m-0 px-3">ADD</button>
+    <a class="bg-light px-2" href="/list">See List</a>
+</span>
+
+
+</form>
+</div>
+
+<%- include("partials/footer") %>

@@ -1,0 +1,30 @@
+<%- include("partials/header") %>
+<%- include("partials/nav") %>
+<div class="form">
+
+<form action="/update/<%= user._id %>" method="post">
+    <input
+     type="text"
+     name="task"
+     value="<%= user.task %>"
+     placeholder="Enter Your Task">
+    <input
+     type="text"
+     name="description"
+     value="<%= user.description %>"
+     placeholder="Enter Task Description">
+    <input 
+     type="text"
+     name="Duedate"
+     value="<%= user.Duedate %>"
+     placeholder="Enter Duedate">
+<span>
+
+    <button class="bg-light m-0 px-3">Update</button>
+</span>
+
+
+</form>
+</div>
+
+<%- include("partials/footer") %>
